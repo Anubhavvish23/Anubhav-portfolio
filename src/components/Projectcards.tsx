@@ -6,7 +6,8 @@ import { motion, AnimatePresence } from "framer-motion"
 export default function SkillsShowcase() {
   const [activeSkill, setActiveSkill] = useState(0)
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
-  const containerRef = useRef(null)
+  const containerRef = useRef<HTMLDivElement>(null)
+
 
   const skills = [
     { id: "01", title: "FULL STACK", subtitle: "DEVELOPER", prefix: "I'M A" },
